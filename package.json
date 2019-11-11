@@ -1,0 +1,19 @@
+{
+  "name": "nail-box-bali-stage0",
+  "version": "1.0.0",
+  "description": "initial layout for Nail Box Bali website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uangbesok/Nail-Box-Bali-stage0.git"
+  },
+  "author": "Sergey Konovalov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uangbesok/Nail-Box-Bali-stage0/issues"
+  },
+  "homepage": "https://github.com/uangbesok/Nail-Box-Bali-stage0#readme"
+}
