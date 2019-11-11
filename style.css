@@ -17,15 +17,23 @@ section, main
     padding: 0;
 }
 
+main {
+    flex: 1 0 auto;
+}
+
 .align--center { text-align: center; }
 
 .wrapper {
-    /* position: relative; */
-    /* display : flex;
+    /* 
+    placing footer at the bottom using position property and calcalating relative size taking
+    into account sticky header height
+
+    position: relative;
+    min-height: calc(100vh - 6rem); */
+
+    display : flex;
     flex-direction: column;
-    flex-flow: wrap;
-    align-self: center;
-    justify-content: center; */
+    height: 100vh;
 } 
 
 .container {
@@ -36,8 +44,11 @@ section, main
 
 .sticky
 {
-    position: fixed;
-    top: 0;
+    flex-shrink: 0;
+    /* 
+        sticky using position property
+        position: fixed; */
+    /* top: 0; */
     width: 100%;
 }
 
@@ -113,7 +124,8 @@ section, main
 
 .videoSection
 {
-    margin-top: 6rem;
+    /* for sticky  
+    margin-top: 6rem; */
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -139,7 +151,11 @@ section, main
     flex-direction: column;
     align-items: center;
     justify-content: center; */
-    padding: 1rem 0 5rem 0;
+   
+    /*
+    for the case when position used 
+    padding: 1rem 0 4rem 0; */
+    padding: 1rem 0 1rem 0;
 }
 
 #form > *
@@ -160,8 +176,9 @@ input[type="submit"]
     height: 3rem;
     color: white;
     width: 100%;
-    bottom: 0;
-    position: fixed;
+    /* bottom: 0; */
+    /* position: absolute; */
+    flex-shrink: 0;
 }
 
 
@@ -227,7 +244,8 @@ input[type="submit"]
 
     .videoSection
     {
-        margin-top: 16rem;
+        /* for the case when position used
+        margin-top: 16rem; */
         padding: 1rem;
     }
 }
